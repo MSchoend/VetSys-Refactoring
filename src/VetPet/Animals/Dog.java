@@ -23,9 +23,14 @@ package VetPet.Animals;
 */
 
 
-
 public class Dog extends Animal
 {
+	
+	public Dog(String name, String ID, String K9_family, String type) {
+		super(name, ID, type);
+		this.K9_family = K9_family;
+	}
+	
     public void setK9_family( String fam ) { K9_family=fam; }
     public String getK9_family() { return K9_family; }
 

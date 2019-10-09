@@ -25,6 +25,12 @@ package VetPet.Animals;
 
 public class Cat extends Animal
 {
+	
+	public Cat(String name, String ID, String type, String fav_cat_toy) {
+		super(name, ID, type);
+		this.fav_cat_toy = fav_cat_toy;
+	}
+	
     public void setFav_cat_toy( String toy) { fav_cat_toy=toy; }
     public String getFav_cat_toy() { return fav_cat_toy; } 
 

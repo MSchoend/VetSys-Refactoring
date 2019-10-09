@@ -47,7 +47,7 @@ public class VetClinic
        \return true is dog has been added, false if the ID number is incorrect
      */
     //---------------------------------------------------------------------------
-    public boolean addDog(String name, String ID, String K9_family, String type )
+    public boolean addDog(String name, String ID, String K9_family, String type)
     {
 	if(ID.length() != 6 ) return false;
 	
@@ -55,12 +55,7 @@ public class VetClinic
 	    if( !Character.isDigit(ID.charAt(i))) return false; 
 
 
-	Dog doggy = new Dog();
-
-	doggy.ID=ID;
-	doggy.type=type;
-	doggy.setN(name,0);
-	doggy.setK9_family(K9_family);
+	Dog doggy = new Dog(name, ID, K9_family, type);
 
 	Doglist[numDogs] = doggy;
 	numDogs++;
@@ -85,12 +80,7 @@ public class VetClinic
 	    if( !Character.isDigit(ID.charAt(i))) return false; 
 
 
-	Cat kitty = new Cat();
-
-	kitty.ID=ID;
-	kitty.type=type;
-	kitty.setN(name,0);
-	kitty.setFav_cat_toy(toy);
+	Cat kitty = new Cat(name, ID, type, toy);
 
 	Catlist[numCats] = kitty;
 	numCats++;
