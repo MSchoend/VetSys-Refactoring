@@ -44,7 +44,7 @@ public class VetClinic
        \param[in] K9_family family branch the dog is from
        \param[in] type the classification of the dog
        
-       \return true is dog has been added, false if the ID number is inncorect
+       \return true is dog has been added, false if the ID number is incorrect
      */
     //---------------------------------------------------------------------------
     public boolean addDog(String name, String ID, String K9_family, String type )

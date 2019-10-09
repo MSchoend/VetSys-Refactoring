@@ -24,17 +24,10 @@ package VetPet.Animals;
 
 
 
-public class Dog
+public class Dog extends Animal
 {
-    public String ID;
-    public String type;
- 
-    public void setN(String N, int N2) { Name=N; }
-    public String getN() { return Name; }
-
     public void setK9_family( String fam ) { K9_family=fam; }
     public String getK9_family() { return K9_family; }
 
-    private String Name;
     private String K9_family;
 }

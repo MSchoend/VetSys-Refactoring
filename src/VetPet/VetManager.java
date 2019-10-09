@@ -93,7 +93,7 @@ public class VetManager
     }
     //----------------------------------------------------------------------------
     /**
-       \brief returns a string with the all the animalsin all the vets 
+       \brief returns a string with the all the animals in all the vets 
        \return the list of animals
     */
     public String list_all_animals()

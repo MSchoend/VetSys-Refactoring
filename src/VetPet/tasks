@@ -1,0 +1,2 @@
+1. Add superclass to cat and dog to consolidate identical fields
+2. Fix VetClinic.addDog and .addCat to properly use constructors (which need to be added to Dog and Cat)
