@@ -104,7 +104,7 @@ public class VetClinic
 	for(i=0;i< numCats; i++)
 	    {
 		Cat c = Catlist[i];
-		ret += "\t ID: "+ c.ID +" Name: " + c.getN() + " Type: " + c.type 
+		ret += "\t ID: "+ c.ID +" Name: " + c.getAnimalName() + " Type: " + c.type 
 		    +" Toy: " + c.getFav_cat_toy() +"\n";
 	    }
 
@@ -112,7 +112,7 @@ public class VetClinic
 	for(i=0;i< numDogs; i++)
 	    {
 		Dog d = Doglist[i];
-		ret += "\t ID: "+ d.ID +" Name: " + d.getN() + " Type: " + d.type 
+		ret += "\t ID: "+ d.ID +" Name: " + d.getAnimalName() + " Type: " + d.type 
 		    +" K9_family: " + d.getK9_family() +"\n";
 	    }
 
@@ -138,7 +138,7 @@ public class VetClinic
 		Cat c = Catlist[i];
 
 		if(c.ID.equals(ID))
-		    return "(CAT) ID: "+ c.ID +" Name: " + c.getN() + " Type: " + c.type 
+		    return "(CAT) ID: "+ c.ID +" Name: " + c.getAnimalName() + " Type: " + c.type 
 		               +" Toy: " + c.getFav_cat_toy() +"\n";
 	    }
 		
@@ -148,7 +148,7 @@ public class VetClinic
 		Dog d = Doglist[i];
 		
 		if(d.ID.equals(ID))
-		    return "(DOG) ID: "+ d.ID +" Name: " + d.getN() + " Type: " + d.type 
+		    return "(DOG) ID: "+ d.ID +" Name: " + d.getAnimalName() + " Type: " + d.type 
 			+" K9_family: " + d.getK9_family() +"\n";
 	    }
 
@@ -158,6 +158,6 @@ public class VetClinic
     private Cat Catlist[] = new Cat[10]; /**< \brief list of all cats in the clinic */
     private Dog Doglist[] = new Dog[10]; /**< \brief list of all dogs in the clinic */
     private int numDogs = 0; /**< \brief number of dogs */
-    private int numCats = 0; /**< \brief numberof cats */
+    private int numCats = 0; /**< \brief number of cats */
     private String Name = ""; /**< \brief name of the clinic */
 }
