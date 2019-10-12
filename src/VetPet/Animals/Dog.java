@@ -1,5 +1,7 @@
 package VetPet.Animals;
 
+import VetPet.IDNum;
+
 /*==========================================================================*/
 /** \file Dog.java
     \brief 
@@ -21,7 +23,7 @@ package VetPet.Animals;
 
 public class Dog extends Animal {
 
-	public Dog(String name, String ID, String K9_family, String type) {
+	public Dog(String name, IDNum ID, String K9_family, String type) {
 		super(name, ID, type);
 		this.K9_family = K9_family;
 	}

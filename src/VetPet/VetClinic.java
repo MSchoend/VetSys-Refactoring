@@ -41,13 +41,10 @@ public class VetClinic {
 	 * \return true is dog has been added, false if the ID number is incorrect
 	 */
 	// ---------------------------------------------------------------------------
-	public boolean addDog(String name, String ID, String K9_family, String type) {
-		if (ID.length() != 6)
+	public boolean addDog(String name, String num, String K9_family, String type) {
+		IDNum ID = new IDNum(num);
+		if (!ID.isValid())
 			return false;
-
-		for (int i = 0; i < ID.length(); i++)
-			if (!Character.isDigit(ID.charAt(i)))
-				return false;
 
 		Dog doggy = new Dog(name, ID, K9_family, type);
 
@@ -66,13 +63,10 @@ public class VetClinic {
 	 * 
 	 * \return true is cat has been added, false if the ID number is inncorect
 	 */
-	public boolean addCat(String name, String ID, String toy, String type) {
-		if (ID.length() != 6)
+	public boolean addCat(String name, String num, String toy, String type) {
+		IDNum ID = new IDNum(num);
+		if (!ID.isValid())
 			return false;
-
-		for (int i = 0; i < ID.length(); i++)
-			if (!Character.isDigit(ID.charAt(i)))
-				return false;
 
 		Cat kitty = new Cat(name, ID, toy, type);
 

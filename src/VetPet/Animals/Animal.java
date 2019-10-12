@@ -1,12 +1,14 @@
 package VetPet.Animals;
 
+import VetPet.IDNum;
+
 public abstract class Animal {
 
-	private String ID;
+	private IDNum ID;
 	private String type;
 	private String name;
 
-	public Animal(String name, String ID, String type) {
+	public Animal(String name, IDNum ID, String type) {
 		this.name = name;
 		this.ID = ID;
 		this.type = type;
@@ -20,7 +22,7 @@ public abstract class Animal {
 		return name;
 	}
 	
-	public String getID() {
+	public IDNum getID() {
 		return ID;
 	}
 	

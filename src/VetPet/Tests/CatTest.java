@@ -6,6 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import VetPet.IDNum;
 import VetPet.Animals.Cat;
 
 public class CatTest {
@@ -14,7 +15,7 @@ public class CatTest {
 	
 	@Before
 	public void setUp() throws Exception {
-		kitty = new Cat("Oliver", "123456", "mouse", "active");
+		kitty = new Cat("Oliver", new IDNum("123456"), "mouse", "active");
 	}
 
 	@After

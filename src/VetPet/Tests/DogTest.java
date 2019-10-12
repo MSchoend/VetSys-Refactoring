@@ -5,6 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import VetPet.IDNum;
 import VetPet.Animals.Dog;
 
 public class DogTest {
@@ -13,7 +15,7 @@ public class DogTest {
 	
 	@Before
 	public void setUp() throws Exception {
-		doggy = new Dog("Spot", "123456", "Collie", "active");
+		doggy = new Dog("Spot", new IDNum("123456"), "Collie", "active");
 	}
 
 	@After
