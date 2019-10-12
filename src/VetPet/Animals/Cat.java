@@ -21,7 +21,7 @@ package VetPet.Animals;
 
 public class Cat extends Animal {
 
-	public Cat(String name, String ID, String type, String fav_cat_toy) {
+	public Cat(String name, String ID, String fav_cat_toy, String type) {
 		super(name, ID, type);
 		this.fav_cat_toy = fav_cat_toy;
 	}
