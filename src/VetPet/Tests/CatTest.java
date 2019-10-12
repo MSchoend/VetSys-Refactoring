@@ -26,9 +26,9 @@ public class CatTest {
 		assertEquals("Oliver", kitty.getAnimalName());
 		kitty.setAnimalName("Shadow");
 		assertEquals("Shadow", kitty.getAnimalName());
-		assertEquals("mouse", kitty.getFav_cat_toy());
-		kitty.setFav_cat_toy("ball");
-		assertEquals("ball", kitty.getFav_cat_toy());
+		assertEquals("mouse", kitty.getTrait());
+		kitty.setTrait("ball");
+		assertEquals("ball", kitty.getTrait());
 	}
 
 }

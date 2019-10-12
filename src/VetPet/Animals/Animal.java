@@ -1,6 +1,6 @@
 package VetPet.Animals;
 
-public class Animal {
+public abstract class Animal {
 
 	private String ID;
 	private String type;
@@ -27,5 +27,9 @@ public class Animal {
 	public String getType() {
 		return type;
 	}
+	
+	public abstract void setTrait(String trait);
+	
+	public abstract String getTrait();
 
 }

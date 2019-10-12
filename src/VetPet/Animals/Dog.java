@@ -26,11 +26,11 @@ public class Dog extends Animal {
 		this.K9_family = K9_family;
 	}
 
-	public void setK9_family(String fam) {
+	public void setTrait(String fam) {
 		K9_family = fam;
 	}
 
-	public String getK9_family() {
+	public String getTrait() {
 		return K9_family;
 	}
 

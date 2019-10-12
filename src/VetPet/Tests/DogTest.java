@@ -25,7 +25,7 @@ public class DogTest {
 		assertEquals("Spot", doggy.getAnimalName());
 		doggy.setAnimalName("Lightning");
 		assertEquals("Lightning", doggy.getAnimalName());
-		assertEquals("Collie", doggy.getK9_family());
+		assertEquals("Collie", doggy.getTrait());
 	}
 	
 }

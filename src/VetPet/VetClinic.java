@@ -102,7 +102,7 @@ public class VetClinic {
 		ret = "Animal: Cats\n";
 		for (i = 0; i < numCats; i++) {
 			Cat c = Catlist[i];
-			ret += "\t ID: " + c.getID() + " Name: " + c.getAnimalName() + " Type: " + c.getType() + " Toy: " + c.getFav_cat_toy()
+			ret += "\t ID: " + c.getID() + " Name: " + c.getAnimalName() + " Type: " + c.getType() + " Toy: " + c.getTrait()
 					+ "\n";
 		}
 
@@ -110,7 +110,7 @@ public class VetClinic {
 		for (i = 0; i < numDogs; i++) {
 			Dog d = Doglist[i];
 			ret += "\t ID: " + d.getID() + " Name: " + d.getAnimalName() + " Type: " + d.getType() + " K9_family: "
-					+ d.getK9_family() + "\n";
+					+ d.getTrait() + "\n";
 		}
 
 		return ret;
@@ -135,7 +135,7 @@ public class VetClinic {
 
 			if (c.getID().equals(ID))
 				return "(CAT) ID: " + c.getID() + " Name: " + c.getAnimalName() + " Type: " + c.getType() + " Toy: "
-						+ c.getFav_cat_toy() + "\n";
+						+ c.getTrait() + "\n";
 		}
 
 		for (i = 0; i < numDogs; i++) {
@@ -143,7 +143,7 @@ public class VetClinic {
 
 			if (d.getID().equals(ID))
 				return "(DOG) ID: " + d.getID()+ " Name: " + d.getAnimalName() + " Type: " + d.getType() + " K9_family: "
-						+ d.getK9_family() + "\n";
+						+ d.getTrait() + "\n";
 		}
 
 		return null;

@@ -26,11 +26,11 @@ public class Cat extends Animal {
 		this.fav_cat_toy = fav_cat_toy;
 	}
 
-	public void setFav_cat_toy(String toy) {
+	public void setTrait(String toy) {
 		fav_cat_toy = toy;
 	}
 
-	public String getFav_cat_toy() {
+	public String getTrait() {
 		return fav_cat_toy;
 	}
 
