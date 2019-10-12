@@ -93,7 +93,7 @@ public class VetClinic {
 
 	// ---------------------------------------------------------------------------
 	/**
-	 * \brief lists all the animalsin the clinic \return the list of animals
+	 * \brief lists all the animals in the clinic \return the list of animals
 	 */
 	public String listAll_animals() {
 		String ret = "";
@@ -102,14 +102,14 @@ public class VetClinic {
 		ret = "Animal: Cats\n";
 		for (i = 0; i < numCats; i++) {
 			Cat c = Catlist[i];
-			ret += "\t ID: " + c.ID + " Name: " + c.getAnimalName() + " Type: " + c.type + " Toy: " + c.getFav_cat_toy()
+			ret += "\t ID: " + c.getID() + " Name: " + c.getAnimalName() + " Type: " + c.getType() + " Toy: " + c.getFav_cat_toy()
 					+ "\n";
 		}
 
 		ret += "\nAnimal: Dogs\n";
 		for (i = 0; i < numDogs; i++) {
 			Dog d = Doglist[i];
-			ret += "\t ID: " + d.ID + " Name: " + d.getAnimalName() + " Type: " + d.type + " K9_family: "
+			ret += "\t ID: " + d.getID() + " Name: " + d.getAnimalName() + " Type: " + d.getType() + " K9_family: "
 					+ d.getK9_family() + "\n";
 		}
 
@@ -133,16 +133,16 @@ public class VetClinic {
 		for (i = 0; i < numCats; i++) {
 			Cat c = Catlist[i];
 
-			if (c.ID.equals(ID))
-				return "(CAT) ID: " + c.ID + " Name: " + c.getAnimalName() + " Type: " + c.type + " Toy: "
+			if (c.getID().equals(ID))
+				return "(CAT) ID: " + c.getID() + " Name: " + c.getAnimalName() + " Type: " + c.getType() + " Toy: "
 						+ c.getFav_cat_toy() + "\n";
 		}
 
 		for (i = 0; i < numDogs; i++) {
 			Dog d = Doglist[i];
 
-			if (d.ID.equals(ID))
-				return "(DOG) ID: " + d.ID + " Name: " + d.getAnimalName() + " Type: " + d.type + " K9_family: "
+			if (d.getID().equals(ID))
+				return "(DOG) ID: " + d.getID()+ " Name: " + d.getAnimalName() + " Type: " + d.getType() + " K9_family: "
 						+ d.getK9_family() + "\n";
 		}
 

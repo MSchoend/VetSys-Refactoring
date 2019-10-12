@@ -2,8 +2,8 @@ package VetPet.Animals;
 
 public class Animal {
 
-	public String ID;
-	public String type;
+	private String ID;
+	private String type;
 	private String name;
 
 	public Animal(String name, String ID, String type) {
@@ -18,6 +18,14 @@ public class Animal {
 
 	public String getAnimalName() {
 		return name;
+	}
+	
+	public String getID() {
+		return ID;
+	}
+	
+	public String getType() {
+		return type;
 	}
 
 }
