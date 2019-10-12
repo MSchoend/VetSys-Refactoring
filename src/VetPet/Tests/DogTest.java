@@ -23,7 +23,7 @@ public class DogTest {
 	@Test
 	public void test() {
 		assertEquals("Spot", doggy.getAnimalName());
-		doggy.setAnimalName("Lightning", 1);
+		doggy.setAnimalName("Lightning");
 		assertEquals("Lightning", doggy.getAnimalName());
 		assertEquals("Collie", doggy.getK9_family());
 	}

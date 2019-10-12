@@ -12,8 +12,8 @@ public class Animal {
 		this.type = type;
 	}
 
-	public void setAnimalName(String N, int N2) {
-		name = N;
+	public void setAnimalName(String newName) {
+		name = newName;
 	}
 
 	public String getAnimalName() {

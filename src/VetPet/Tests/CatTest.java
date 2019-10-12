@@ -24,7 +24,7 @@ public class CatTest {
 	@Test
 	public void test() {
 		assertEquals("Oliver", kitty.getAnimalName());
-		kitty.setAnimalName("Shadow", 1);
+		kitty.setAnimalName("Shadow");
 		assertEquals("Shadow", kitty.getAnimalName());
 		assertEquals("mouse", kitty.getFav_cat_toy());
 		kitty.setFav_cat_toy("ball");
